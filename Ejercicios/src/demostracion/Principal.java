@@ -13,7 +13,7 @@ public class Principal {
     public static void main (String[] Args){
         Scanner entrada = new Scanner (System.in);
         // declaracion de variables
-        int mensajes;
+        int mensajes,b = 0,mensajes1;
         double costo = 3;
         
         // Pedido de datos
@@ -25,17 +25,19 @@ public class Principal {
             // Calculo de mensajes mayores de 40
             costo += (costo*0.12);
         } else {
-            if (mensajes >= 40){
-                float adi = (float)(mensajes - 40);
-                adi *= 0.05;
-                costo += adi;
-                // Calculo por mensajes mayores a 200 
+            // Calculo por mensajes mayores a 200 
                 if (mensajes >= 200){
                    float adici = (float)(mensajes - 200);
+                   b = (int) adici;
                    adici *= 0.10;
                    costo += adici;
+                    if (mensajes >= 40){
+                        mensajes1 = mensajes - 40 - b;
+                        float adi = (float)(mensajes1);
+                        adi *= 0.05;
+                        costo += adi;
+                    }
                 }
-            }
         }
         costo += (costo*0.12);
         System.out.printf("El valor a pagar por : %d mensajes es: %.2f",
