@@ -7,9 +7,10 @@ package paquetedos;
 
 /**
  *
- * @author DELL
+ * @author Frank Saca
  */
 public class Operacion {
     // mensaje 
     public static String mensaje = "Usted esta aporbado";
+    public static String mensaje2 = "Usted esta reprobado ";
 }

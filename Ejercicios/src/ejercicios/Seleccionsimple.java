@@ -8,7 +8,7 @@ import java.util.Scanner;
 import paquetedos.*;
 /**
  *
- * @author DELL
+ * @author Frank Saca
  */
 public class Seleccionsimple {
    
@@ -25,7 +25,7 @@ public class Seleccionsimple {
         
      System.out.println("Ingrese las Segunda calificacion : ");
         calificacion_2 = entrada.nextInt();
-        // Condicional
+        // Condicional No repetivo
         if (calificacion >= 58){
             System.out.printf("%s %d\n", miMensaje, calificacion);
         }
